@@ -1,0 +1,11 @@
+NFC Render deployment
+
+Files:
+- NFC_RENDER.py
+- requirements.txt
+- render.yaml
+
+On Render: New -> Web Service -> connect your GitHub repo -> Free.
+Set BOT_TOKEN in Environment Variables. Start command is already in render.yaml.
+
+Important: Render Free Web Services can spin down after 15 minutes without inbound traffic, and local files are ephemeral. This build is suitable for testing/hobby use; the bot may stop responding while the service is sleeping.
