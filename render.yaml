@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nfc-telegram-bot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python NFC_RENDER.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
